@@ -13,7 +13,7 @@
                 Autores: João Danielewicz, Jaqueline Camargo, Allana Paganini e Bianca Maccarini.
             </p>
             <hr>
-            <a class="text-end" href="/loja">Repositório no GitHub</a>
+            <a class="text-end" href="https://github.com/joao-danielewicz/recappro">Repositório no GitHub</a>
         </div>
     </div>
 </footer>

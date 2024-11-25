@@ -4,6 +4,6 @@
 // para que a View opere de modo correto.
 class NotFoundController{
     public function index(){
-        echo "Página não encontrada.";
+        header("Location: /");
     }
 }
