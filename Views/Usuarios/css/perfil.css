@@ -1,0 +1,17 @@
+#fotoPerfil img{
+    max-width: 20vw;
+}
+
+#galeria {
+    min-height: 80vh;
+}
+
+#infoperfil {
+    min-width: 15vw;
+    overflow-wrap: break-word;
+}
+img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}

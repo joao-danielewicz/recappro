@@ -1,0 +1,281 @@
+        /* NAVBAR */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #444;
+        }
+        header {
+            background: linear-gradient(90deg, #f2d9ff, #2a0055);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            background: linear-gradient(90deg, #f2d9ff, #2a0055);
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1001;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #fdfdfd;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 120px;
+            bottom: 0;
+            overflow-y: auto;
+            z-index: 999;
+        }
+        .sidebar h3 {
+            color: #6a0dad;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #6a0dad;
+            padding-bottom: 5px;
+        }
+        .sidebar input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .sidebar button {
+            width: 100%;
+            padding: 10px;
+            background-color: #6a0dad;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .sidebar button:hover {
+            background-color: #8a2be2;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .sidebar ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+            font-size: 16px;
+        }
+        .sidebar ul li:last-child {
+            border-bottom: none;
+        }
+        .sidebar ul li::before {
+            content: "\2022";
+            color: #6a0dad;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .sidebar-right {
+            width: 250px;
+            background-color: #fdfdfd;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 120px;
+            bottom: 0;
+            right: 0;
+            overflow-y: auto;
+            z-index: 999;
+        }
+
+        .sidebar-right h3 {
+            color: #8a2be2;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #8a2be2;
+            padding-bottom: 5px;
+        }
+
+        .sidebar-right .stats-box {
+            background-color: #f3f3f3;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .sidebar-right .stats-box p {
+            margin: 10px 0;
+            font-size: 1.1em;
+            color: #444;
+        }
+
+        .sidebar-right .progress-bar {
+            background-color: #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+
+        .sidebar-right .progress-bar-inner {
+            background-color: #6a0dad;
+            width: 75%; /* Exemplo: Progresso de 75% */
+            height: 20px;
+        }
+
+        /* Lista de conquistas */
+        .conquistas {
+            margin-top: 20px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .conquistas li {
+            background: url('https://img.icons8.com/ios-filled/50/6a0dad/checkmark.png') no-repeat left center;
+            padding-left: 30px;
+            margin: 10px 0;
+        }
+
+        /* Estilos do conteúdo principal */
+        .main-content {
+            margin: 100px 270px 0 270px; /* Ajustado para as duas sidebars */
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .section {
+            padding: 20px 0;
+        }
+
+        .section h2 {
+            color: #6a0dad;
+            font-size: 2em;
+        }
+
+        .section p {
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .section ul li {
+            background: url('https://img.icons8.com/ios-filled/50/6a0dad/checkmark.png') no-repeat left center;
+            padding-left: 40px;
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #6a0dad;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .button:hover {
+            background-color: #7b1fa2;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .section {
+            padding: 20px 0;
+        }
+        .section p {
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .section ul li {
+            background: url('https://img.icons8.com/ios-filled/50/6a0dad/checkmark.png') no-repeat left center;
+            padding-left: 40px;
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        .button {
+            display: inline-block;
+            background-color: #441574;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background-color: #f2d9ff;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxOTgzODV8MHwxfGFsbHwxfHx8fHx8fHwxNjM3MTA1ODU3&ixlib=rb-1.2.1&q=80&w=1080') center center / cover;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            border-radius: 10px;
+        }
+        .hero h2 {
+            font-size: 3em;
+            margin: 0 0 20px 0;
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin: 0 0 30px 0;
+        }
+        .img-responsive {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .code-link {
+            margin-top: 20px;
+        }
+        .log-box {
+            background-color: #f3f3f3;
+            border-left: 4px solid #6a0dad;
+            padding: 10px;
+            margin: 20px 0;
+            font-family: monospace;
+            color: #333;
+            overflow-x: auto;
+        }

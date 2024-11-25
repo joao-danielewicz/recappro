@@ -1,0 +1,101 @@
+/* Adição de famílias de fonte */
+@font-face {
+    font-family: Lato;
+    src: url(../Lato/Lato-Regular.ttf)
+}
+@font-face {
+    font-family: LatoBold;
+    src: url(../Lato/Lato-Bold.ttf)
+}
+@font-face {
+    font-family: LatoThin;
+    src: url(../Lato/Lato-Thin.ttf)
+}
+@font-face {
+    font-family: LatoItalic;
+    src: url(../Lato/Lato-Italic.ttf)
+}
+@font-face {
+    font-family: LatoBlack;
+    src: url(../Lato/Lato-Black.ttf)
+}
+/* ------------------------------ */
+
+
+body{
+    font-family: Lato;
+    background-color: #F0DDFF;
+}
+
+
+/* Estilos do cabeçalho */
+header {
+    background: linear-gradient(90deg, #f2d9ff, #2a0055);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header a{
+    text-decoration: none;
+    color: #340068;
+}
+
+header div#titulo{
+    font-size: 26px;
+}
+
+header div#opcoes a{
+    color: #f2d9ff;
+    text-decoration: none;
+}
+header div#opcoes a:hover{
+    color: #e0a2ff;
+}
+
+#titulo {
+    display: flex;
+}
+
+#titulo p:last-child{
+    font-family: LatoBlack;
+}
+/* --------------------- */
+
+
+/* Estilos do rodapé */
+
+footer{
+    color: #f2d9ff;
+    height: 20vh;
+    background: #21004d;
+    bottom: 0;
+    z-index: 1000;
+}
+
+footer a{
+    color: #f2d9ff;
+    text-decoration: none;
+}
+
+footer div#titulo{
+    font-size: 26px;
+}
+
+footer div#opcoes a:hover{
+    color: #e0a2ff;
+}
+/* ----------------- */
+
+/* Estilos de botão */
+.button-roxo  {
+    border: none;
+    background-color: #6a0dad !important;
+    color: white !important;
+    font-size: 16px !important;
+    transition: background-color 0.3s ease;
+}
+
+.button-roxo:hover {
+    background-color: #5a0d8a !important;
+}
+/* ------------------- */

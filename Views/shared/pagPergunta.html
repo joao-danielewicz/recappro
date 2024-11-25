@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Aplicativo de Estudos</title>
+</head>
+<body>
+    <header>
+        <h1>Aplicativo de Estudos</h1>
+    </header>
+
+    <nav>
+        <a href="#perfil">Perfil</a>
+        <a href="#login">Login</a>
+        <a href="#cadastro">Cadastro</a>
+        <a href="#perguntas">Perguntas</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#configurações">Configurações</a>
+    </nav>
+
+    <div class="sidebar">
+        <h3>Personalize suas perguntas!</h3>
+        <a href="" class="button">Criar nova pergunta</a>
+        <a href="" class="button">Editar pergunta</a>
+    </div>
+
+    <div class="container hero">
+        <h2 class="perguntas">Cadastro de Perguntas</h2>
+        <form action="#" method="post">
+            <label for="assunto">Assunto:</label>
+            <input type="assunto" id="assunto" name="assunto" required>
+
+            <label for="pergunta">Pergunta:</label>
+            <input type="pergunta" id="pergunta" name="pergunta" required>
+
+            <label for="midiaPergunta">Mídia (para pergunta):</label>
+            <input type="file" id="midiaPergunta" name="midiaPergunta" accept="image/*,video/*" class="media-input">
+
+            <label for="resposta">Resposta:</label>
+            <input type="resposta" id="resposta" name="resposta" required>
+
+            <label for="midiaResposta">Mídia (para resposta):</label>
+            <input type="file" id="midiaResposta" name="midiaResposta" accept="image/*,video/*" class="media-input">
+
+            <button type="submit" class="button submit-button">Cadastrar Pergunta</button>
+
+        </form>
+    </div> 
+</body>
+</html>

@@ -1,0 +1,14 @@
+.modal-dialog{
+    max-width: 70vw !important;
+}
+
+.modal-dialog img{
+    max-width: 25vw;
+}
+a:hover{
+    color: #7b1fa2 !important;
+}
+
+#cards{
+    min-height: 75vh;
+}

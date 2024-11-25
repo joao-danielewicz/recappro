@@ -1,0 +1,118 @@
+/* Estilos básicos */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #444;
+}
+
+header {
+    background: linear-gradient(90deg, #f2d9ff, #2a0055);
+    color: white;
+    padding: 15px 0; /* Aumentei o padding */
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+main {
+    padding: 40px 20px; /* Ajustei o padding */
+    background-color: white;
+    border-radius: 10px; /* Bordas mais arredondadas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
+    max-width: 400px;
+    width: 100%;
+    margin: 100px auto 20px;
+}
+
+h2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 24px; /* Aumentei o tamanho da fonte */
+    text-align: center; /* Centralizei o título */
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+form div {
+    margin-bottom: 20px; /* Aumentei o espaço entre os campos */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+button {
+    padding: 12px; /* Aumentei o padding */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Aumentei o tamanho da fonte */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Campos do formulário */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #6a0dad;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="password2"],
+input[type="tel"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="password2"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus {
+    border-color: #6a0dad;
+    box-shadow: 0 0 5px rgba(106, 13, 173, 0.3);
+}
+
+/* Botão de envio */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #6a0dad;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5a0d8a;
+}
