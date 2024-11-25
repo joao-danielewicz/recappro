@@ -40,7 +40,7 @@ class TarefaScheduler{
     // Optamos por esta restrição pois, caso contrário, os intervalos entre os estudos aumentariam infinitamente.
     // E deste modo, o usuário ainda verá a tarefa com regularidade, podendo exclui-la caso sinta-se confortável.
 
-    // Após, definirá o último estudo como a data atual e 
+    // Após, definirá o último estudo como a data atual e o próximo estudo conforme a regra já mencionada.
     public function Estudar($tarefa){
         if($tarefa['estudar'] == "dificil"){
             if($tarefa['nivelEstudo'] != 0){

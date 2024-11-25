@@ -1,6 +1,6 @@
 <?php
 
-
+// Lê os bytes do arquivo da imagem passado através de um POST, retornando-os como uma string.
 function pegarImagem(Array $files):string{
     $nome_img = $files['name'];
     $tipo_img = $files['type'];
