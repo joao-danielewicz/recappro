@@ -29,12 +29,12 @@ require_once("Views/shared/layout/header.php");
 
         <div id="galeria" class="text-center bg-white shadow rounded round p-3 flex-grow-1">
             <h2 class="my-3">Galeria</h2>
-
+            <p>Clique num item abaixo para defini-lo como padrão.</p>
 
             <div class="row g-0 row-cols-lg-3 row-cols-sm-2 row-cols-1">
                 <?php if (!empty($galeria)): foreach ($galeria as $item): ?>
                         <div class="col">
-                            <a href="/mudarfotoperfil?idItem=<?php echo($item['idItem'])?>">
+                            <a href="/mudarfotoperfil?idItem=<?php echo ($item['idItem']) ?>">
                                 <img src="data:image/*; base64,<?= base64_encode($item['midia']) ?>" />
                             </a>
                         </div>
