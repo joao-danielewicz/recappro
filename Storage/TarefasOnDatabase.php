@@ -81,13 +81,21 @@ class TarefasOnDatabase{
         
         $data = date_format($data, "Y-m-d");
         if(in_array($idCurso, $cursosDisponiveis)){
-            $sqlBusca = "SELECT tarefas.* FROM tarefas INNER JOIN
-                        cursos ON tarefas.idCurso = cursos.idCurso WHERE
-                        tarefas.idCurso = '{$idCurso}' AND
-                        cursos.idUsuario = '{$idUsuario}' AND
-                        (CAST(tarefas.dataProximoEstudo as DATE) = '{$data}' OR
-                        tarefas.nivelEstudo = 0)";
-
+            $sqlBusca = "SELECT quantidadeNovasTarefas FROM cursos WHERE idCurso = '{$idCurso}' AND idUsuario = '{$idUsuario}'";
+            $resultado = mysqli_query($this->conexao, $sqlBusca);
+            $qtdTarefas = mysqli_fetch_assoc($resultado)['quantidadeNovasTarefas'];
+            
+            $sqlBusca = "SELECT * FROM tarefas INNER JOIN cursos on tarefas.idCurso = cursos.idCurso
+	                    WHERE tarefas.idCurso = '{$idCurso}' 
+                        AND cursos.idUsuario = '{$idUsuario}'
+                        AND tarefas.nivelEstudo != 0
+                        AND (CAST(tarefas.dataProximoEstudo as DATE) = '{$data}')
+                        UNION
+                        (SELECT * FROM tarefas INNER JOIN cursos on tarefas.idCurso = cursos.idCurso
+		                WHERE tarefas.idCurso = '{$idCurso}'
+                        AND cursos.idUsuario = '{$idUsuario}'
+                        AND tarefas.nivelEstudo = 0
+		                ORDER BY rand() LIMIT {$qtdTarefas} )";
             $resultado = mysqli_query($this->conexao, $sqlBusca);
             
             $tarefas = [];
