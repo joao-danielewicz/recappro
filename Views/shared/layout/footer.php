@@ -1,4 +1,4 @@
-<footer class=" shadow d-flex">
+<footer class=" mt-5 shadow d-flex">
     <div class="container d-flex justify-content-between align-items-center">
         <a href="/">
             <div id="titulo">
