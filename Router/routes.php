@@ -32,5 +32,8 @@ $routes = [
     '/updateitem' => 'CosmeticsController@UpdateItem',
     '/deleteitem' => 'CosmeticsController@DeleteItem',
     '/loja' => 'CosmeticsController@index',
-    '/compraritem' => 'CosmeticsController@ComprarItem'
+    '/compraritem' => 'CosmeticsController@ComprarItem',
+
+    // Funcionalidades
+    '/pomodoro' => 'HomeController@Pomodoro',
 ];

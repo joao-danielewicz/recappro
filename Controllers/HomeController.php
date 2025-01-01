@@ -9,4 +9,8 @@ class HomeController extends RenderView{
             'titulo' => "RecapPro - Início"
         ]);
     }
+
+    public function Pomodoro(){
+        $this->loadView('/Home/pomodoro');
+    }
 }
