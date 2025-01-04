@@ -4,12 +4,15 @@
 
     <p id="pomodoro">25:00</p>
 
-    <button onclick="pomodoro('25', '00')">Iniciar</button>
+    <input type="number" name="minutos" id="inputMinutos" min="5" max="50" step="1" placeholder="25">
+    <input type="number" name="segundos" id="inputSegundos" step="1" value="00" hidden>
+
+    <button onclick="pomodoro()">Iniciar</button>
     <button id="pausar" onclick="pausar()">Pausar</button>
 </body>
 
 <script>
-    function pomodoro(minutos, segundos) {
+    function pomodoro(minutos = document.getElementById("inputMinutos").value, segundos = document.getElementById("inputSegundos").value) {
         document.getElementById("pomodoro").innerHTML = minutos + ":" + segundos;
         var milissegundos = (minutos * 60 * 1000) + (segundos*1000);
 
