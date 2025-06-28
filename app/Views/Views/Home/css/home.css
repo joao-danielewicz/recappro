@@ -1,0 +1,32 @@
+#firstSection {
+    background: rgb(252, 252, 252);
+    background: linear-gradient(
+        90deg,
+        rgba(252, 252, 252, 1) 0%,
+        rgba(255, 255, 255, 1) 25%,
+        rgba(106, 13, 173, 1) 100%
+    );
+    min-height: calc(100vh - 71px);
+
+}
+
+#firstSection h1{
+    font-family: LatoBold;
+}
+
+#firstSection p{
+    font-size: 20px;
+}
+#firstSection span{
+    color: #340068;
+}
+
+#firstSection a:hover{
+    color: #340068;
+    background-color: #F0DDFF !important;
+}
+
+#tutorial, #informacoes {
+    padding-top: 119px;
+    min-height: calc(100vh - 119px);
+}
