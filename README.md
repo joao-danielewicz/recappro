@@ -1,6 +1,6 @@
 
 # RecapPro
-Este projeto foi desenvolvido na disciplina de Programação II da UNOESC Videira. Tem como objetivo a criação de um aplicativo de estudos que implementa o método de repetição espaçada, com criação de tarefas e seu agrupamento em cursos. Além, conta com um sistema de troca de pontos recebidos ao estudar por imagens.
+Este projeto foi desenvolvido na disciplina de Programação III da UNOESC Videira. Tem como objetivo a criação de um aplicativo de estudos que implementa o método de repetição espaçada, com criação de tarefas e seu agrupamento em cursos. Além, conta com um sistema de troca de pontos recebidos ao estudar por imagens.
 
 
 
