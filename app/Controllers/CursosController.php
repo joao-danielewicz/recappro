@@ -101,4 +101,5 @@ class CursosController extends RenderView{
         $this->index();
         die();
     }
+    //apos isso fazer uso de testes para ver se esta tudo corendo como planejado.
 }
